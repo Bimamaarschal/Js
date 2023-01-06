@@ -41,7 +41,7 @@
       <aside class="doc__nav">
         <ul>
           <li class="js-btn selected">Get Started</li>
-          <li class="js-btn">Configuration</li>
+          <li class="js-btn">Variabel</li>
           <li class="js-btn">Keybindings</li>
           <li class="js-btn">Issues</li>
         </ul>
@@ -69,46 +69,41 @@
             </pre>
           </div>
         </section>
-        <section class="js-section">
-          <h3 class="section__title">Configuration</h3>
+        <!-- A-Frame Basic View -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">A-Frame basic view</h3>
           <p>
-            Learn how to configure settings for Scribbler, such as your syntax
-            highlighting preference and the default saving folder location.
+            Contoh project yang dibuat dengan A-Frame dan AR.Js basic, dengan
+            mejalankan HTML dan memberikan akses kamera, ketika preset yang di
+            tentukan terdeteksi maka program akan menampilkan gambar bumi text
+            standar.
           </p>
-          <table id="customers">
-            <tr>
-              <th>Options</th>
-              <th>Value</th>
-              <th>Default</th>
-            </tr>
-            <tr>
-              <td>encryption</td>
-              <td>
-                encrypt all notes before saving. If turned on, it requires
-                password to open the file.
-              </td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>highlighting</td>
-              <td>Show syntax highlight on markdown text.</td>
-              <td>true</td>
-            </tr>
-            <tr>
-              <td>prettyTable</td>
-              <td>Render table with Scribbler’s pretty table style.</td>
-              <td>true</td>
-            </tr>
-          </table>
-          <p>
-            Malis percipitur an pro. Pro aperiam persequeris at, at sonet
-            sensibus mei, id mea postulant definiebas concludaturque. Id qui
-            malis abhorreant, mazim melius quo et. At eam altera dolorum, case
-            dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no
-            verterem deseruisse, mea brute postea te, ne per tacimates suavitate
-            vituperatoribus.
-          </p>
-          <hr />
+          <h3 class="section__title__script">Html</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+
+                  &lt;a-scene embedded arjs=&quot;sourceType: webcam;&quot;&gt;
+                    &lt;a-entity
+                      rotation=&quot;-90 0 0&quot;
+                      geometry=&quot;primitive: plane; width: 4; height: auto&quot;
+                      material=&quot;color: blue&quot;
+                      text=&quot;value: Bumi \n Menampilkan gambar bumi dasar&quot;
+                    &gt;
+                    &lt;/a-entity&gt;
+                    &lt;a-image src=&quot;images/earth-flat.jpg&quot; rotation=&quot;-90 0 0&quot;&gt;&lt;/a-image&gt;
+                    &lt;a-marker-camera preset=&quot;hiro&quot;&gt;&lt;/a-marker-camera&gt;
+                  &lt;/a-scene&gt;
+              
+                &lt;/body&gt;
+              </code>
+            </pre>
+          </div>
+          <br />
+          <a href="variabel.html" class="button--primary" target="_blank"
+            >Coba Kode</a
+          >&nbsp;
         </section>
         <section class="js-section">
           <h3 class="section__title">Keybindings</h3>

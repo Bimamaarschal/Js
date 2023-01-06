@@ -23,43 +23,26 @@
     <a href="javascript:void(0)" id="dragbar"></a>
     <div class="doc__bg"></div>
     <nav class="header">
-      <h1 class="logo">
-        Dokumentasi <span class="logo__thin">JavaScript</span>
-      </h1>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
         <li class="menu__item">
-          <a href="" class="link link--dark"
-            ><i class="fa fa-github"></i> Github</a
-          >
-        </li>
-        <li class="menu__item">
           <a href="index.html" class="link link--dark"
-            ><i class="fa fa-home"></i> Home</a
+            ><i class="fa fa-reply"></i> Kembali</a
           >
         </li>
       </ul>
     </nav>
     <div class="wrapper">
-      <aside class="doc__nav">
-        <ul>
-          <li class="js-btn selected">Get Started</li>
-          <li class="js-btn">Configuration</li>
-          <li class="js-btn">Keybindings</li>
-          <li class="js-btn">Issues</li>
-        </ul>
-      </aside>
       <article class="doc__content">
-        <section class="js-section">
-          <h3 class="section__title">Get Started</h3>
-          <p>
-            Learn how to configure settings for Scribbler, such as your syntax
-            highlighting preference and the default saving folder location.
-          </p>
-          <h3 class="section__title">Installation</h3>
+        <h3 class="section__title">Get Started</h3>
+        <p>
+          Learn how to configure settings for Scribbler, such as your syntax
+          highlighting preference and the default saving folder location.
+        </p>
+        <h3 class="section__title">Installation</h3>
 
-          <div class="code__block code__block--notabs">
-            <pre class="code code--block">
+        <div class="code__block code__block--notabs">
+          <pre class="code code--block">
               <textarea
             autocomplete="off"
             id="textareaCode"
@@ -84,29 +67,28 @@
   </textarea
           >
             </pre>
-          </div>
+        </div>
 
-          <button class="button--primary" onclick="submitTryit(1)">
-            Run &raquo;
-          </button>
-          <form
-            id="codeForm"
-            autocomplete="off"
-            style="margin: 0px; display: none"
-          >
-            <input type="hidden" name="code" id="code" />
-          </form>
+        <button class="button--primary" onclick="submitTryit(1)">
+          Run &raquo;
+        </button>
+        <form
+          id="codeForm"
+          autocomplete="off"
+          style="margin: 0px; display: none"
+        >
+          <input type="hidden" name="code" id="code" />
+        </form>
 
-          <div class="code__block code__block--notabs">
-            <pre class="code code--block">
+        <div class="code__block code__block--notabs">
+          <pre class="code code--block">
           <div id="iframecontainer">
             <div id="iframe">
               <div id="iframewrapper"></div>
             </div>
           </div>
             </pre>
-          </div>
-        </section>
+        </div>
 
         <section class="js-section">
           <h3 class="section__title">Configuration</h3>
