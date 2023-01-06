@@ -4,9 +4,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Scribbler Documentation - a code documentation page template for codrops
-    </title>
+    <title>Statement - JavaScript</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,65 +13,39 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/scribbler-global.css" />
-    <link rel="stylesheet" href="css/scribbler-doc.css" />
-    <link rel="author" href="humans.txt" />
+    <link rel="stylesheet" href="../css/scribbler-global.css" />
+    <link rel="stylesheet" href="../css/scribbler-doc.css" />
+    <link rel="stylesheet" href="../css/codemirror.css" />
+    <script src="../js/codemirror.js"></script>
+    <script src="../js/listener.js"></script>
   </head>
+
   <body>
     <div class="doc__bg"></div>
+    <a href="javascript:void(0)" id="dragbar"></a>
     <nav class="header">
-      <h1 class="logo">
-        Dokumentasi <br />Java<span class="logo__thin">Script</span>
-      </h1>
       <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
         <li class="menu__item">
-          <a href="" class="link link--dark"
-            ><i class="fa fa-github"></i> Github</a
-          >
-        </li>
-        <li class="menu__item">
-          <a href="index.html" class="link link--dark"
-            ><i class="fa fa-home"></i> Home</a
+          <a href="../doc.html" class="link link--dark"
+            ><i class="fa fa-arrow-left"></i> Kembali</a
           >
         </li>
       </ul>
     </nav>
-    <div class="wrapper">
-      <aside class="doc__nav">
-        <ul>
-          <li class="js-btn selected">JavaScript</li>
-          <li class="js-btn">Statement</li>
-          <li class="js-btn">Keybindings</li>
-          <li class="js-btn">Issues</li>
-        </ul>
-      </aside>
-      <article class="doc__content">
-        <section class="js-section">
-          <h3 class="section__title">JavaScript</h3>
-          <p>
-            Learn how to configure settings for Scribbler, such as your syntax
-            highlighting preference and the default saving folder location.
-          </p>
-          <h3 class="section__title">Installation</h3>
-          <div class="code__block code__block--notabs">
-            <pre class="code code--block">
-              <code>
-                document.getElementById("memulai").innerHTML = "Hello World"
-              </code>
-            </pre>
-          </div>
-        </section>
 
+    <div class="wrapper">
+      <article class="doc__content">
         <!-- Statement -->
 
-        <section class="js-section" style="padding-bottom: 85px">
+        <section class="js-section" style="padding-bottom: 10px">
           <h3 class="section__title">Statement</h3>
           <p>
-            Pada JavaScript statement terdiri dari Nilai, Operator, Ekspresi,
-            Kata Kunci, dan Komentar. Terdapat 3
+            Statement atau yang dapat di terjemahkan sebagai sebuah pernyataan,
+            yaitu instruksi pemrograman yang akan di eksekusi oleh komputer.
+            <br />
+            Dalam program JavaScript juga terdapat statement/pernyataan
+            pemrograman dari setiap kode yang dibuat.
           </p>
-          <h3 class="section__title__script">Contoh</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
@@ -83,46 +55,49 @@
                 c = a + b;
               </code>
             </pre>
-            <br />
-            <a href="page/statement.html" class="button--primary">Pelajari</a
-            >&nbsp;
           </div>
         </section>
 
         <!-- A-Frame Basic View -->
         <section class="js-section" style="padding-bottom: 85px">
-          <h3 class="section__title">A-Frame basic view</h3>
-          <p>
-            Contoh project yang dibuat dengan A-Frame dan AR.Js basic, dengan
-            mejalankan HTML dan memberikan akses kamera, ketika preset yang di
-            tentukan terdeteksi maka program akan menampilkan gambar bumi text
-            standar.
-          </p>
+          <h3 class="section__title">
+            <i class="fa fa-spin fa-cog"></i> JavaScript
+          </h3>
           <h3 class="section__title__script">Html</h3>
+
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
-              <code>
-                &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+              <textarea id="textareaCode">
 
-                  &lt;a-scene embedded arjs=&quot;sourceType: webcam;&quot;&gt;
-                    &lt;a-entity
-                      rotation=&quot;-90 0 0&quot;
-                      geometry=&quot;primitive: plane; width: 4; height: auto&quot;
-                      material=&quot;color: blue&quot;
-                      text=&quot;value: Bumi \n Menampilkan gambar bumi dasar&quot;
-                    &gt;
-                    &lt;/a-entity&gt;
-                    &lt;a-image src=&quot;images/earth-flat.jpg&quot; rotation=&quot;-90 0 0&quot;&gt;&lt;/a-image&gt;
-                    &lt;a-marker-camera preset=&quot;hiro&quot;&gt;&lt;/a-marker-camera&gt;
-                  &lt;/a-scene&gt;
-              
-                &lt;/body&gt;
-              </code>
-            </pre>
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <p>Mencoba Statement</p>
+        <button type="button" onclick="myFunction()">Klik ini untuk menampilkan hasil</button>
+          <p id="Teks1"></p>
+          <p id="Teks2"></p>
+            <script>
+            function myFunction() {
+            document.getElementById("Teks1").innerHTML = "Ini isi dari teks 1";
+            document.getElementById("Teks2").innerHTML = "yang ini isi dari teks 1";
+            }
+            </script>
+    </body>
+  </html>
+
+            </textarea>
+          </pre>
           </div>
-          <br />
-          <a href="variabel.html" class="button--primary">Coba Kode</a>&nbsp;
+
+          <button class="button--primary-a" onclick="submitTryit(1)">
+            Run
+          </button>
+
+          <div class="code__block">
+            <pre class="code code--block"><div id="iframewrapper"></div></pre>
+          </div>
         </section>
+
         <section class="js-section">
           <h3 class="section__title">Keybindings</h3>
           <p>
@@ -186,6 +161,8 @@
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    <script src="js/scribbler.js"></script>
+
+    <script src="../js/function.js"></script>
+    <script src="../js/scribbler.js"></script>
   </body>
 </html>
