@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Statement - JavaScript</title>
+    <title>Syntax - JavaScript</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,22 +38,28 @@
         <!-- Statement -->
 
         <section class="js-section" style="padding-bottom: 10px">
-          <h3 class="section__title">Statement</h3>
+          <h3 class="section__title">Syntax</h3>
           <p>
-            Statement atau yang dapat di terjemahkan sebagai sebuah pernyataan,
-            yaitu instruksi pemrograman yang akan di eksekusi oleh komputer.
-            <br />
-            Dalam program JavaScript juga terdapat statement/pernyataan
-            pemrograman dari setiap kode yang dibuat.
+            Sintaks JavaScript adalah seperangkat aturan, pola umum agar Program
+            JavaScript dibangun.
+          </p>
+          <p>
+            Sintaks JavaScript mendefinisikan dua jenis nilai, yaitu Nilai tetap
+            dan Nilai variabel. <br />
+
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> Nilai tetap disebut
+            Literal.<br />
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> Nilai variabel disebut
+            Variabel .
           </p>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                let a, b, c;
-                a = 5;
-                b = 6;
-                c = a + b;
-              </code>
+                var x, y;
+                x = 5 + 6;
+                y = x * 10;
+                document.getElementById("demo").innerHTML = y;
+            </code>
             </pre>
           </div>
         </section>
@@ -71,17 +77,18 @@
 
   <!DOCTYPE html>
   <html>
-    <body>
-      <p>Mencoba Statement</p>
-        <button type="button" onclick="myFunction()">Klik ini untuk menampilkan hasil</button>
-          <p id="Teks1"></p>
-          <p id="Teks2"></p>
-            <script>
-            function myFunction() {
-            document.getElementById("Teks1").innerHTML = "Ini isi dari teks 1";
-            document.getElementById("Teks2").innerHTML = "yang ini isi dari teks 2";
-            }
-            </script>
+    <body>        
+      <h2>Contoh Syntax dari JavaScript</h2>
+      <p id="data"></p>
+        <script>
+          var variabel_a, variabel_b;
+
+          variabel_a = 5 + 6;
+
+          variabel_b = variabel_a * 10;
+
+        document.getElementById("data").innerHTML = variabel_b;
+        </script>
     </body>
   </html>
 
@@ -98,65 +105,35 @@
           </div>
         </section>
 
-        <section class="js-section-baris">
-          <h3 class="section__title">Kata Kunci</h3>
-
+        <section class="js-section" style="padding-bottom: 10px">
+          <h3 class="section__title">Indentifikasi</h3>
+          <p>Pengidentifikasi adalah nama JavaScript.</p>
           <p>
-            Pada JavaScript program sering dimulai dengan kata kunci untuk
-            mengidentifikasi tindakan JavaScript yang akan dilakukan.
+            Pengidentifikasi digunakan untuk memberi nama variabel dan kata
+            kunci, dan fungsi. Aturan untuk nama resmi sama di sebagian besar
+            bahasa pemrograman.
           </p>
-          <table id="customers">
-            <tr>
-              <th>Kata Kunci</th>
-              <th>Keterangan</th>
-            </tr>
-            <tr>
-              <td>Var</td>
-              <td>Mendeklarasikan sebuah variabel</td>
-            </tr>
-            <tr>
-              <td>let</td>
-              <td>Mendeklarasikan variabel blok</td>
-            </tr>
-            <tr>
-              <td>const</td>
-              <td>Mendeklarasikan konstanta blok</td>
-            </tr>
-            <tr>
-              <td>if</td>
-              <td>
-                Menandai blok pernyataan yang akan dieksekusi pada suatu kondisi
-              </td>
-            </tr>
-            <tr>
-              <td>switch</td>
-              <td>
-                Menandai blok pernyataan yang akan dieksekusi dalam kasus yang
-                berbeda
-              </td>
-            </tr>
-            <tr>
-              <td>for</td>
-              <td>
-                Menandai blok pernyataan yang akan dieksekusi dalam satu
-                lingkaran
-              </td>
-            </tr>
-            <tr>
-              <td>function</td>
-              <td>Mendeklarasikan sebuah fungsi</td>
-            </tr>
-            <tr>
-              <td>return</td>
-              <td>Keluar dari fungsi</td>
-            </tr>
-            <tr>
-              <td>try</td>
-              <td>Menerapkan penanganan kesalahan ke blok pernyataan</td>
-            </tr>
-          </table>
-          <hr />
+          <p>
+            Nama JavaScript harus diawali dengan: <br />
+
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> Surat (AZ atau az).<br />
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> Tanda dolar ($).
+            <br />
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> garis bawah (_).
+            <br />
+          </p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                let variabel1, Variabel2, _variabel3;
+                variabel1 = "Bima";
+                Variabel2 = "Maarschal";
+                _variabel3 = "Rizky";
+            </code>
+            </pre>
+          </div>
         </section>
+
         <section class="js-section">
           <h3 class="section__title">Issues</h3>
           <p>Saat ini belum terdapat kesalahan/keluhan terkait Statement</p>

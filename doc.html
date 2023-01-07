@@ -44,7 +44,7 @@
         <ul>
           <li class="js-btn selected">JavaScript</li>
           <li class="js-btn">Statement</li>
-          <li class="js-btn">Keybindings</li>
+          <li class="js-btn">Syntax</li>
           <li class="js-btn">Issues</li>
         </ul>
       </aside>
@@ -52,10 +52,11 @@
         <section class="js-section">
           <h3 class="section__title">JavaScript</h3>
           <p>
-            Learn how to configure settings for Scribbler, such as your syntax
-            highlighting preference and the default saving folder location.
+            JavaScript adalah bahasa skrip yang digunakan untuk membuat konten
+            halaman web dinamis, berfungsi untuk membuat elemen yang mampu
+            meningkatkan interaksi pengunjung seperti menu drop-down, animasi,
+            dan warna background dinamis.
           </p>
-          <h3 class="section__title">Installation</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
@@ -63,6 +64,18 @@
               </code>
             </pre>
           </div>
+          <p>
+            Sejarah JavaScript dimulai pada tahun 1995, diciptakan oleh Brendan
+            Eich di Netscape Communications. Awalnya, JavaScript hanya digunakan
+            untuk keperluan internal dengan web browser perusahaan tersebut,
+            Netscape Navigator.
+          </p>
+          <p>
+            Awalnya, JavaScript bernama LiveScript, yang kemudian diubah menjadi
+            JavaScript agar bisa menjadi “teman” bagi bahasa pemrograman Java
+            milik mitra mereka, Sun Microsystems. Kami akan menjelaskan
+            perbedaan Java dan JavaScript nanti.
+          </p>
         </section>
 
         <!-- Statement -->
@@ -71,7 +84,7 @@
           <h3 class="section__title">Statement</h3>
           <p>
             Pada JavaScript statement terdiri dari Nilai, Operator, Ekspresi,
-            Kata Kunci, dan Komentar. Terdapat 3
+            Kata Kunci, dan Komentar.
           </p>
           <h3 class="section__title__script">Contoh</h3>
           <div class="code__block code__block--notabs">
@@ -89,40 +102,39 @@
           </div>
         </section>
 
-        <!-- A-Frame Basic View -->
+        <!-- Syntax -->
+
         <section class="js-section" style="padding-bottom: 85px">
-          <h3 class="section__title">A-Frame basic view</h3>
+          <h3 class="section__title">Syntax</h3>
           <p>
-            Contoh project yang dibuat dengan A-Frame dan AR.Js basic, dengan
-            mejalankan HTML dan memberikan akses kamera, ketika preset yang di
-            tentukan terdeteksi maka program akan menampilkan gambar bumi text
-            standar.
+            Sintaks JavaScript adalah seperangkat aturan, pola umum agar Program
+            JavaScript dibangun.
           </p>
-          <h3 class="section__title__script">Html</h3>
+          <p>
+            Sintaks JavaScript mendefinisikan dua jenis nilai, yaitu Nilai tetap
+            dan Nilai variabel. <br />
+
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> Nilai tetap disebut
+            Literal.<br />
+            &nbsp;&nbsp;<i class="fa fa-angle-right"></i> Nilai variabel disebut
+            Variabel .
+          </p>
+          <h3 class="section__title__script">Contoh</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
-
-                  &lt;a-scene embedded arjs=&quot;sourceType: webcam;&quot;&gt;
-                    &lt;a-entity
-                      rotation=&quot;-90 0 0&quot;
-                      geometry=&quot;primitive: plane; width: 4; height: auto&quot;
-                      material=&quot;color: blue&quot;
-                      text=&quot;value: Bumi \n Menampilkan gambar bumi dasar&quot;
-                    &gt;
-                    &lt;/a-entity&gt;
-                    &lt;a-image src=&quot;images/earth-flat.jpg&quot; rotation=&quot;-90 0 0&quot;&gt;&lt;/a-image&gt;
-                    &lt;a-marker-camera preset=&quot;hiro&quot;&gt;&lt;/a-marker-camera&gt;
-                  &lt;/a-scene&gt;
-              
-                &lt;/body&gt;
+                  var x, y;
+                  x = 5 + 6;
+                  y = x * 10;
+                  document.getElementById("demo").innerHTML = y;
               </code>
             </pre>
+            <br />
+            <a href="page/syntax.html" class="button--primary">Pelajari</a
+            >&nbsp;
           </div>
-          <br />
-          <a href="variabel.html" class="button--primary">Coba Kode</a>&nbsp;
         </section>
+
         <section class="js-section">
           <h3 class="section__title">Keybindings</h3>
           <p>
