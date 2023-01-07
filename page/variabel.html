@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Variabel - JavaScript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/scribbler-global.css" />
+    <link rel="stylesheet" href="../css/scribbler-doc.css" />
+    <link rel="stylesheet" href="../css/codemirror.css" />
+    <script src="../js/codemirror.js"></script>
+    <script src="../js/listener.js"></script>
+  </head>
+
+  <body>
+    <div class="doc__bg"></div>
+    <a href="javascript:void(0)" id="dragbar"></a>
+    <nav class="header">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="../doc.html" class="link link--dark"
+            ><i class="fa fa-arrow-left"></i> Kembali</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <!-- Statement -->
+
+        <section class="js-section" style="padding-bottom: 10px">
+          <h3 class="section__title">Variabel</h3>
+          <p>
+            Variabel adalah wadah untuk menyimpan data (menyimpan nilai data).
+          </p>
+          <p>
+            inginkan aturan umum dan fixs selalu deklarasikan variabel dengan
+            const. Jika nilai variabel dapat berubah, gunakan let.
+          </p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                const variabel1 = 5;
+                const variabel2 = 6;
+                let total = variabel1 + variabel2;
+            </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- A-Frame Basic View -->
+        <section class="js-section">
+          <h3 class="section__title">
+            <i class="fa fa-spin fa-cog"></i> JavaScript
+          </h3>
+          <h3 class="section__title__script">Html</h3>
+
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <textarea id="textareaCode">
+
+  <!DOCTYPE html>
+  <html>
+    <body>        
+      <h2>Contoh Syntax dari JavaScript</h2>
+      <p id="data"></p>
+        <script>
+          var variabel_a, variabel_b;
+
+          variabel_a = 5 + 6;
+
+          variabel_b = variabel_a * 10;
+
+        document.getElementById("data").innerHTML = variabel_b;
+        </script>
+    </body>
+  </html>
+
+            </textarea>
+          </pre>
+          </div>
+
+          <button class="button--primary-a" onclick="submitTryit(1)">
+            Run
+          </button>
+
+          <div class="code__block">
+            <pre class="code code--block"><div id="iframewrapper"></div></pre>
+          </div>
+        </section>
+
+        <section class="js-section" style="padding-bottom: 10px">
+          <h3 class="section__title">Indentifikasi</h3>
+          <p>Pengidentifikasi adalah nama JavaScript.</p>
+          <p>
+            Pengidentifikasi digunakan untuk memberi nama variabel dan kata
+            kunci, dan fungsi. Aturan untuk nama resmi sama di sebagian besar
+            bahasa pemrograman.
+          </p>
+          <p>
+            Nama JavaScript harus diawali dengan: <br />
+
+            &nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> Surat (AZ atau
+            az).<br />
+            &nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> Tanda dolar ($).
+            <br />
+            &nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> garis bawah (_).
+            <br />
+          </p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                let variabel1, Variabel2, _variabel3;
+                variabel1 = "Bima";
+                Variabel2 = "Maarschal";
+                _variabel3 = "Rizky";
+            </code>
+            </pre>
+          </div>
+        </section>
+
+        <section class="js-section">
+          <h3 class="section__title">Issues</h3>
+          <p>Saat ini belum terdapat kesalahan/keluhan terkait Statement</p>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">
+      Scribbler is a free HTML template created exclusively for
+      <a
+        href="https://tympanus.net/codrops/"
+        target="_blank"
+        class="link link--light"
+        >Codrops</a
+      >.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <script src="../js/function.js"></script>
+    <script src="../js/scribbler.js"></script>
+  </body>
+</html>
