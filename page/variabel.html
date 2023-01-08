@@ -43,8 +43,11 @@
             Variabel adalah wadah untuk menyimpan data (menyimpan nilai data).
           </p>
           <p>
-            inginkan aturan umum dan fixs selalu deklarasikan variabel dengan
-            const. Jika nilai variabel dapat berubah, gunakan let.
+            Di dalam JavaScript, sebuah variabel bisa diisi dengan data apa
+            saja, apakah itu teks, angka, atau data lain yang lebih kompleks
+            seperti object. Jika ingin membuat aturan umum dan fixs selalu
+            deklarasikan variabel dengan const. Jika nilai variabel dapat
+            berubah, gunakan let.
           </p>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
@@ -55,6 +58,18 @@
             </code>
             </pre>
           </div>
+          <p>
+            Untuk memberi nilai ke dalam variabel, pakai operator assignment
+            menggunakan tanda sama dengan ” = “, seperti pada contoh di atas.
+          </p>
+          <p>
+            <i class="fa fa-lightbulb-o"></i> Proses pembuatan variabel dikenal
+            dengan istilah deklarasi.
+          </p>
+          <p>
+            <i class="fa fa-lightbulb-o"></i> Proses memberikan nilai awal ke
+            sebuah variabel disebut juga dengan istilah inisialisasi.
+          </p>
         </section>
 
         <!-- A-Frame Basic View -->
@@ -64,6 +79,11 @@
           </h3>
           <h3 class="section__title__script">Html</h3>
 
+          <p>
+            Berikut contoh variabel pada JavaScript. Klik run untuk menampilkan
+            hasil dari program yang anda buat.
+          </p>
+
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <textarea id="textareaCode">
@@ -71,7 +91,7 @@
   <!DOCTYPE html>
   <html>
     <body>        
-      <h2>Contoh Syntax dari JavaScript</h2>
+      <h4>Contoh Syntax dari JavaScript</h4>
       <p id="data"></p>
         <script>
           var variabel_a, variabel_b;
@@ -100,37 +120,30 @@
 
         <section class="js-section" style="padding-bottom: 10px">
           <h3 class="section__title">Indentifikasi</h3>
-          <p>Pengidentifikasi adalah nama JavaScript.</p>
-          <p>
-            Pengidentifikasi digunakan untuk memberi nama variabel dan kata
-            kunci, dan fungsi. Aturan untuk nama resmi sama di sebagian besar
-            bahasa pemrograman.
-          </p>
-          <p>
-            Nama JavaScript harus diawali dengan: <br />
-
-            &nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> Surat (AZ atau
-            az).<br />
-            &nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> Tanda dolar ($).
-            <br />
-            &nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> garis bawah (_).
-            <br />
-          </p>
+          <p>Identifikasi penggunaan kata kunci variabel pada JavaScript.</p>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                let variabel1, Variabel2, _variabel3;
-                variabel1 = "Bima";
-                Variabel2 = "Maarschal";
-                _variabel3 = "Rizky";
+                const var1 = 5;
+                const var2 = 6;
+                let total = var1 + var2;
             </code>
             </pre>
           </div>
+          <p>
+            Dari contoh diatas terlihat bahwa kedua variabel var1 dan var2
+            dideklarasikan dengan const kata kunci. Ini adalah nilai konstan dan
+            tidak dapat diubah.
+          </p>
+          <p>
+            Variabel (total) dinyatakan dengan let kata kunci ini adalah nilai
+            yang bisa diubah.
+          </p>
         </section>
 
         <section class="js-section">
           <h3 class="section__title">Issues</h3>
-          <p>Saat ini belum terdapat kesalahan/keluhan terkait Statement</p>
+          <p>Saat ini belum terdapat kesalahan/keluhan terkait Variabel</p>
         </section>
       </article>
     </div>
