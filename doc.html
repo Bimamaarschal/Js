@@ -215,56 +215,65 @@
         </section>
 
         <!-- Tipe Data -->
-
         <section class="js-section" style="padding-bottom: 85px">
           <h3 class="section__title">Tipe Data</h3>
           <p>
-            Variabel adalah wadah untuk menyimpan data (menyimpan nilai data).
+            Tipe Data adalah pembagian jenis data yang memberitahu program
+            bagaimana sebuah data seharusnya diperlakukan.
           </p>
           <p>
-            Jika yang di tetapkan adalah aturan umum dan fixs maka deklarasikan
-            variabel dengan const. Jika nilai variabel dapat berubah, gunakan
-            let.
+            JavaScript, terdapat dua klasifikasi yakni Primitif dan Object
+            <br />
+            <i class="fa fa-angle-right"></i> Primitif: Tipe data yang sederhana
+            dan hanya memiliki satu jenis tipe data. <br />
+            <i class="fa fa-angle-right"></i> Object: Merupakan tipe data yang
+            kompleks dan dapat memuat berbagai jenis tipe data.
           </p>
           <h3 class="section__title__script">Contoh</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                const variabel1 = 5;
-                const variabel2 = 6;
-                let total = variabel1 + variabel2;
+                let x;       // undefined
+                x = 5;       // Variabel x adalah Number
+                x = "John";  // Variabel x adalah String 
               </code>
             </pre>
             <br />
-            <a href="page/variabel.html" class="button--primary">Pelajari</a
-            >&nbsp;
+            <a href="page/tipedata.html" class="button--primary">Coba</a>&nbsp;
           </div>
         </section>
 
         <!-- Objek -->
-
         <section class="js-section" style="padding-bottom: 85px">
           <h3 class="section__title">Objek</h3>
           <p>
-            Variabel adalah wadah untuk menyimpan data (menyimpan nilai data).
+            Objek dalam Javascript didefinisikan sebagai mutable properties
+            collection, yang artinya adalah sekumpulan properti (ciri khas) yang
+            dapat berubah nilainya.
           </p>
           <p>
-            Jika yang di tetapkan adalah aturan umum dan fixs maka deklarasikan
-            variabel dengan const. Jika nilai variabel dapat berubah, gunakan
-            let.
+            Objek Javascript terdiri dari banyak properti. Masing-masing
+            properti ini digunakan untuk mendeskripsikan objek tersebut. Sebuah
+            properti idealnya berhubungan langsung dan mendeskripsikan objek
+            dengan jelas.
           </p>
           <h3 class="section__title__script">Contoh</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                const variabel1 = 5;
-                const variabel2 = 6;
-                let total = variabel1 + variabel2;
+                const User01 = {
+                  namaDepan: "Bima",
+                  namaBelakang: "Maarschal",
+                  umur: 21,
+                  tinggiBadan: "175"
+                };
+
+                document.getElementById("data").innerHTML =
+                User01.namaDepan + " is " + User01.umur + " years old.";
               </code>
             </pre>
             <br />
-            <a href="page/variabel.html" class="button--primary">Pelajari</a
-            >&nbsp;
+            <a href="page/objek.html" class="button--primary">Coba</a>&nbsp;
           </div>
         </section>
 
