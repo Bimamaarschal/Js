@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Statement - JavaScript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/scribbler-global.css" />
+    <link rel="stylesheet" href="../css/scribbler-doc.css" />
+    <link rel="stylesheet" href="../css/codemirror.css" />
+    <script src="../js/codemirror.js"></script>
+    <script src="../js/listener.js"></script>
+  </head>
+
+  <body>
+    <div class="doc__bg"></div>
+    <a href="javascript:void(0)" id="dragbar"></a>
+    <nav class="header">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="../doc.html" class="link link--dark"
+            ><i class="fa fa-arrow-left"></i> Kembali</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <!-- Statement -->
+
+        <section class="js-section" style="padding-bottom: 10px">
+          <h3 class="section__title">Operator</h3>
+          <p>
+            Operator pada Javascript adalah mekanisme yang bisa digunakan untuk
+            mengeksekusi berbagai jenis perhitungan, kalkulasi dan perbandingan
+            di dalam sintaksis Javascript.
+          </p>
+          <p>
+            Pada dasarnya terdapat 6 jenis operator Javascript. Tipe-tipe
+            operator yang umum dipakai dalam Javascript adalah:
+            <br />
+            <i class="fa fa-angle-right"></i> Aritmatika <br />
+            <i class="fa fa-angle-right"></i> Penetapan <br />
+            <i class="fa fa-angle-right"></i> String <br />
+            <i class="fa fa-angle-right"></i> Perbandingan <br />
+            <i class="fa fa-angle-right"></i> Operator logika <br />
+            <i class="fa fa-angle-right"></i> Operator bersyarat
+          </p>
+          <h3 class="section__title__script">Contoh Operator Aritmatika</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+                <code>
+                  let a = 3;
+                  let x = (100 + 50) * a;
+                </code>
+              </pre>
+          </div>
+        </section>
+
+        <!-- A-Frame Basic View -->
+        <section class="js-section">
+          <h3 class="section__title">
+            <i class="fa fa-spin fa-cog"></i> JavaScript
+          </h3>
+          <p>
+            Berikut contoh operator aritmatika pada JavaScript. Klik run untuk
+            menampilkan hasil dari program yang anda buat.
+          </p>
+          <h3 class="section__title__script">Html</h3>
+
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <textarea id="textareaCode">
+
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <h4>Operator</h4>
+      <p id="data"></p>
+      <script>
+        let x = 5 + 5;
+        let y = "5" + 5;
+        let z = "Hello" + 5;
+        document.getElementById("data").innerHTML =
+        x + "<br>" + y + "<br>" + z;
+        </script>
+    </body>
+  </html>
+                
+            </textarea>
+          </pre>
+          </div>
+
+          <button class="button--primary-a" onclick="submitTryit(1)">
+            Run
+          </button>
+
+          <div class="code__block">
+            <pre class="code code--block"><div id="iframewrapper"></div></pre>
+          </div>
+        </section>
+
+        <section class="js-section-baris">
+          <h3 class="section__title">Operator Aritmatika</h3>
+
+          <p>
+            Operator Aritmatika digunakan untuk melakukan aritmatika pada angka.
+          </p>
+          <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Addition</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Subtraction</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Multiplication</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>Exponentiation</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Division</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Modulus (Division Remainder)</td>
+            </tr>
+            <tr>
+              <td>++</td>
+              <td>Increment</td>
+            </tr>
+            <tr>
+              <td>--</td>
+              <td>Decrement</td>
+            </tr>
+          </table>
+          <hr />
+        </section>
+
+        <section class="js-section-baris">
+          <h3 class="section__title">Operator Penugasan</h3>
+
+          <p>
+            Operator penugasan menetapkan nilai ke variabel JavaScript. Operator
+            Penugasan Penambahan ( +=) menambahkan nilai ke variabel.
+          </p>
+          <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>Contoh</th>
+            </tr>
+            <tr>
+              <td>=</td>
+              <td>x = y</td>
+            </tr>
+            <tr>
+              <td>=+</td>
+              <td>x += y</td>
+            </tr>
+            <tr>
+              <td>-=</td>
+              <td>x -= y</td>
+            </tr>
+            <tr>
+              <td>*=</td>
+              <td>x *= y</td>
+            </tr>
+            <tr>
+              <td>/=</td>
+              <td>x /= y</td>
+            </tr>
+            <tr>
+              <td>%=</td>
+              <td>x %= y</td>
+            </tr>
+            <tr>
+              <td>**=</td>
+              <td>x **= y</td>
+            </tr>
+          </table>
+          <hr />
+        </section>
+
+        <section class="js-section-baris">
+          <h3 class="section__title">Operator Perbandingan</h3>
+          <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>equal to</td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>equal value and equal type</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>not equal</td>
+            </tr>
+            <tr>
+              <td>!==</td>
+              <td>not equal value or not equal type</td>
+            </tr>
+            <tr>
+              <td>></td>
+              <td>greater than</td>
+            </tr>
+            <tr>
+              <td><</td>
+              <td>less than</td>
+            </tr>
+            <tr>
+              <td>>=</td>
+              <td>greater than or equal to</td>
+            </tr>
+            <tr>
+              <td><=</td>
+              <td>less than or equal to</td>
+            </tr>
+            <tr>
+              <td>?</td>
+              <td>ternary operator</td>
+            </tr>
+          </table>
+          <hr />
+        </section>
+
+        <section class="js-section-baris">
+          <h3 class="section__title">Operator Logika</h3>
+          <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+            <tr>
+              <td>&&</td>
+              <td>logical and</td>
+            </tr>
+            <tr>
+              <td>||</td>
+              <td>logical or</td>
+            </tr>
+            <tr>
+              <td>!</td>
+              <td>logical not</td>
+            </tr>
+          </table>
+          <hr />
+        </section>
+
+        <section class="js-section">
+          <h3 class="section__title">Issues</h3>
+          <p>Saat ini belum terdapat kesalahan/keluhan terkait Statement</p>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">
+      Scribbler is a free HTML template created exclusively for
+      <a
+        href="https://tympanus.net/codrops/"
+        target="_blank"
+        class="link link--light"
+        >Codrops</a
+      >.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <script src="../js/function.js"></script>
+    <script src="../js/scribbler.js"></script>
+  </body>
+</html>
